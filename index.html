@@ -1,0 +1,38 @@
+<!doctype html>
+<html ng-app="BetApp">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bet App - Powered by Satellizer</title>
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootswatch/3.3.0/paper/bootstrap.min.css">
+  <link rel="stylesheet" href="//code.ionicframework.com/ionicons/1.5.2/css/ionicons.min.css">
+  <link rel="stylesheet" src="client/css/styles.css">
+</head>
+<body>
+ <div class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <ul class="nav navbar-nav">
+      <a href="/" class="navbar-brand"><i class="ion-images"></i>Bet App</a>
+      <li><a href="#/">Sponsors Area</a></li>
+      <li><a href="#/">Photobook</a></li>
+      <li><a href="#/">Pricing</a></li>
+      <li><a href="#/signup">Sign up</a></li>
+      <li><a ng-click="logout()" href="">Logout</a></li>
+    </ul>
+  </div>
+</div>
+<div ng-view></div>
+ 
+<script src="client/vendor/angular.js"></script>
+<script src="client/vendor/angular-route.js"></script>
+<script src="client/vendor/angular-messages.js"></script>
+<script src="client/vendor/satellizer.js"></script>
+<script src="app.js"></script>
+<script src="client/controllers/home.js"></script>
+<script src="client/controllers/navbar.js"></script>
+<script src="client/controllers/login.js"></script>
+<script src="client/controllers/signup.js"></script>
+<script src="client/controllers/detail.js"></script>
+</body>
+</html>
